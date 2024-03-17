@@ -1,0 +1,145 @@
+*{
+    background-color: #E5E5E5;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logoAlura{
+    margin-left: 10px;
+    padding-top: 10px;
+    width: 5%;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    }
+
+    .text-area{
+        border: none;
+        color: #0A3871;
+        margin-top: 90px;
+        text-transform: lowercase;
+    }
+
+    ::placeholder {color: #0A3871;}
+        .text-area:focus {
+            outline: none;
+        }
+
+.mensagem{
+    background: #FFFF;
+    background-image: url(assets/lupa.png), url(assets/mensagem.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, center;
+    border: none;
+    border-radius: 32px;
+    color: #0A3871;
+    margin-left: 90px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    display: flex;
+}
+
+.mensagem:focus{
+    outline: none;
+}
+
+.botoes{
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-desencriptar{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btn-encriptar{
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #FFFF;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.btn-copiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 108px;
+    margin-top: 650px;
+    position: absolute;
+    width: 336px;
+}
+
+.informacao{
+    color: #495057;
+    font-size: 18px;
+    margin-top: 308px;
+}
+
+.footer{   
+    font-family: Inter;
+    font-size: 12px;
+    text-align:left;
+    font-weight: 400;
+    line-height: 24px;
+    color: #343A40;
+    margin-left: 4%;
+}
+
+.footer a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #343A40;
+} 
+
+@media (max-width:1000px ){
+    main{
+        flex-direction: column;
+    }
+
+    .logoAlura{
+        margin-left: 10px;
+        padding-top: 10px;
+        width: 15%;
+    }
+
+    .mensagem{
+        background: #FFFF;
+        background-image: url(assets/mensagem.png);
+        background-repeat: no-repeat;
+        background-position:center;
+        border: none;
+        border-radius: 32px;
+        color: #0A3871;
+        margin-left: 0px;
+        margin-top: 20px;
+        padding-left: 20px;
+        position:static;
+        width: 650px;
+        height: 150px;
+        display: flex;
+    }
+    
+    .btn-copiar{
+        display: none;
+    }
+
+
+}
