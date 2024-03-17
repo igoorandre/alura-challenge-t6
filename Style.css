@@ -141,5 +141,26 @@ main{
         display: none;
     }
 
+    .botoes{
+     flex-direction: column;
+     gap: 18px;
+    }
+
+    .btn-encriptar{
+        position: relative; 
+        width: 650px;
+    }
+
+    .btn-desencriptar{
+        position: relative; 
+        width: 650px;
+        margin-left: 0px;
+    }
+    
+
+       
+    }
+    
+
 
 }
